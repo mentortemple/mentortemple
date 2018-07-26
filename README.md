@@ -1,22 +1,20 @@
-# bahdcasts
+<div align="center">
+<h1><pre><code>MENTOR TEMPLE</code></pre></h1>
+<i>COMING SOON</i>
+<p>Become an expert in your industry. Get mentored by experts.</p>
+</div>
 
-> bahdcasts
+<hr />
 
-## Build Setup
+## The problem
 
-``` bash
-# install dependencies
-$ yarn install
+You want to become a professional in your industry. You find yourself moving from one online course to another, not knowing exactly how to achieve your goals. You lack the required experience to be able get a good job in your domain. You need an online course that just gives you everything you need, and you also need someone to guide you so that you achieve your goals, become a professional and make the world a better place.
 
-# serve with hot reload at localhost:3000
-$ yarn run dev
+## This solution
 
-# build for production and launch server
-$ yarn run build
-$ yarn start
+`Mentortemple` provides you with a well structured and curated curriculum to supplement your learning, and matches you with industry experts willing to guide you along your journey through the curriculum. Mentors give you feedback on all submitted assignments, making sure you are learning the right things, and have everything you need to become an expert in your niche.
 
-# generate static project
-$ yarn run generate
-```
+Mentortemple gives you the opportunity to give back to the community. Find someone on the learning journey and give that person a guide that will make his/her life. 
 
-For detailed explanation on how things work, checkout [Nuxt.js docs](https://nuxtjs.org).
+`MORE DOCUMENTATION COMING SOON ABOUT THIS PROJECT`
+
