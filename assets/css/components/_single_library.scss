@@ -1,0 +1,115 @@
+@import "../variables";
+
+.module-title {
+  font-size: 1.4rem;
+  color: map-get($palette, secondary);
+}
+.module-item {
+  color: map-get($palette, primary);
+  font-size: 1.1rem;
+}
+.lesson-title {
+  font-size: 1.8rem;
+}
+
+.card-lesson {
+  padding: 2rem !important;
+}
+.card-submittion {
+  padding: 2rem 3rem !important;
+
+  .hero-button {
+    padding: 1rem 1.5rem;
+    height: 3rem;
+    line-height: 1.3rem;
+  }
+}
+
+.accordion {
+  .card {
+    box-shadow: none;
+    padding: 0.3rem;
+
+    .card-header {
+      background-color: rgba(0, 0, 0, 0.03);
+      color: #495057 !important;
+      border-bottom: none;
+    }
+
+    a {
+      cursor: pointer;
+    }
+
+    .btn-no-padding {
+      box-shadow: none;
+      padding: 0;
+    }
+  }
+}
+
+.lesson-list-item {
+  &-section-title {
+    font-size: 1.7rem !important;
+  }
+  &.active {
+    color: map-get($gray, 1000);
+    font-weight: bold;
+    margin-left: 6px;
+
+    .lesson-list-item-circle {
+      background-color: map-get($gray, 1000);
+    }
+  }
+}
+
+.lesson-subtitle {
+  font-size: 2rem !important;
+}
+
+.nav-tabs .nav-link.active,
+.nav-tabs .nav-item.show .nav-link {
+  background-color: transparent;
+  border-color: transparent;
+  border-bottom: 2px solid map-get($palette, primary);
+}
+.nav-tabs .nav-link:hover {
+  border-color: transparent;
+  border-bottom: 2px solid map-get($palette, primary);
+}
+.lesson-list-item-circle {
+  display: inline-block;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50% !important;
+  background-color: map-get($gray, 1100);
+}
+
+.checked {
+  color: #6abfc3;
+  font-weight: bolder;
+}
+
+.lesson-list-item {
+  margin-bottom: 1rem;
+}
+
+.success {
+  color: map-get($palette, check);
+}
+
+.embed-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+}
+.embed-container iframe,
+.embed-container object,
+.embed-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}

@@ -1,0 +1,21 @@
+@import "../variables";
+
+.footer-brand,
+.footer-social,
+.footer-links {
+  padding: 7rem 0;
+}
+
+.footer-brand a {
+  font-family: "Norse";
+  color: map-get($palette, primary) !important;
+  font-size: 2rem;
+}
+
+@media (max-width: 768px) {
+  .footer-brand,
+  .footer-social,
+  .footer-links {
+    padding: 2rem 0;
+  }
+}

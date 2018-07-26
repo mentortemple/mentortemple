@@ -1,0 +1,26 @@
+@import "../variables";
+
+.course-title {
+  color: map-get($palette, secondary);
+  font-size: 1.4rem;
+}
+.course-subtitle {
+  font-size: 1rem;
+}
+
+.library-tag {
+  margin: 1.5rem;
+
+  &__circle {
+    border-radius: 50% !important;
+    height: 1rem;
+    width: 1rem;
+    display: inline-block;
+    background-color: black;
+    margin-right: 1rem;
+  }
+
+  &__title {
+    display: inline-block;
+  }
+}

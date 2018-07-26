@@ -1,0 +1,67 @@
+@import "variables";
+
+.hljs-comment,
+.hljs-quote {
+  color: rgb(154, 168, 128);
+}
+.hljs-variable,
+.hljs-tag,
+.hljs-name,
+.hljs-selector-id,
+.hljs-selector-class,
+.hljs-regexp,
+.hljs-deletion {
+  color: rgb(220, 57, 88);
+}
+.hljs-template-variable {
+  color: map-get($text-colors, darker);
+}
+.hljs-number,
+.hljs-built_in,
+.hljs-builtin-name,
+.hljs-literal,
+.hljs-type,
+.hljs-params,
+.hljs-meta,
+.hljs-link {
+  color: rgb(220, 57, 88);
+}
+.hljs-attr {
+  color: rgb(220, 57, 88);
+}
+.hljs-string,
+.hljs-symbol,
+.hljs-bullet,
+.hljs-addition {
+  color: rgb(0, 143, 104);
+}
+.hljs-title,
+.hljs-section {
+  color: #8fa1b3;
+}
+.hljs-keyword,
+.hljs-selector-tag {
+  color: rgb(109, 182, 91);
+}
+.hljs {
+  display: block;
+  overflow-x: auto;
+  color: rgb(108, 119, 87);
+  padding: 0.5em;
+  font-weight: bolder;
+  font-family: "IBM Plex Mono", monospace !important;
+}
+.hljs,
+.hljs span {
+  font-family: "IBM Plex Mono", monospace !important;
+  font-size: 1.2rem;
+}
+.hljs-emphasis {
+  font-style: italic;
+}
+code {
+  color: rgb(108, 119, 87);
+}
+.hljs-strong {
+  font-weight: bolder;
+}

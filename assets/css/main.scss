@@ -1,0 +1,215 @@
+@import "bootstrap-variables";
+@import "~bootstrap/scss/bootstrap";
+
+@import "variables";
+
+* {
+  border-radius: 0px !important;
+  // font-family: "Josefin Sans", sans-serif;
+  font-family: "Merriweather", serif;
+  letter-spacing: 0.5px;
+  font-size: 1rem;
+  color: map-get($text-colors, darker);
+  margin: 0;
+  padding: 0;
+}
+
+*:focus {
+  outline: none !important;
+}
+
+.navbar-brand {
+  font-family: "Norse";
+  font-weight: 500;
+  font-size: 1.7rem;
+  color: map-get($palette, primary) !important;
+}
+
+body,
+.gradient {
+  // background-image: linear-gradient(
+  //   to bottom,
+  //   map-get($gray, 100),
+  //   map-get($gray, 200)
+  // );
+  // background-color: #fcfff7;
+}
+
+.primary {
+  color: map-get($text-colors, primary);
+}
+
+a {
+  color: map-get($text-colors, default) !important;
+  text-decoration: none !important;
+  cursor: pointer;
+}
+
+.page-enter-active,
+.page-leave-active {
+  transition: opacity 0.1s;
+}
+.page-enter,
+.page-leave-active {
+  opacity: 0;
+  transform: scale(0);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  // color: map-get($palette, secondary);
+  // font-family: "Amatic SC", cursive;
+  // font-family: 'Montserrat', sans-serif;
+}
+
+.nav-link {
+  text-align: center;
+}
+
+.tile img {
+  margin-bottom: 4rem;
+  margin-top: 4rem;
+}
+
+.header {
+  height: 70vh;
+  max-width: 100%;
+  background: linear-gradient(map-get($gray, 100), map-get($gray, 200));
+  background-color: #fcfff7;
+  clip-path: polygon(0 0, 100% 0, 100% 72%, 0 100%);
+}
+.how-it-works {
+  background: linear-gradient(map-get($gray, 100), map-get($gray, 200));
+}
+
+.hero-header {
+  color: map-get($palette, primary);
+  font-size: 2.25rem;
+  font-weight: 300;
+  padding-top: 4rem;
+}
+
+button:disabled {
+  cursor: not-allowed !important;
+}
+
+.btn-primary:active,
+.btn-primary:not(:disabled):not(.disabled):active {
+  background-color: map-get($palette, success);
+  border-color: map-get($palette, success);
+}
+
+.hero-button,
+.hero-button:disabled,
+.hero-button:active {
+  background-color: map-get($palette, success);
+}
+.btn {
+  color: map-get($gray, 100) !important;
+  border-radius: 0.2rem;
+  font-size: 1em;
+  text-align: center;
+  cursor: pointer;
+  letter-spacing: 0.2px;
+  box-shadow: 0 0.05em 0.25em 0 map-get($gray, github);
+  padding: 1rem 3.5rem;
+  border: none;
+}
+.btn-sm {
+  padding: 1rem 2rem;
+  height: 3rem;
+  line-height: 1.3rem;
+}
+.btn-transparent {
+  background-color: transparent;
+  border: 2px solid map-get($palette, transparent-button);
+  color: map-get($palette, transparent-button) !important;
+  box-shadow: none;
+}
+.btn-secondary, .btn-secondary:disabled {
+  background-color: map-get($palette, primary);
+  padding: 1rem 1.5rem;
+  height: 3rem;
+  line-height: 1.3rem;
+}
+
+.btn-secondary:hover {
+  opacity: 0.8;
+  background-color: map-get($palette, primary);
+}
+.btn-secondary:not(:disabled):not(.disabled):active {
+  background-color: map-get($palette, primary);
+}
+@media (max-width: 767px) {
+  .hero-button {
+    padding: 1rem 2rem;
+  }
+}
+.hero-button:hover {
+  opacity: 0.8;
+  background-color: map-get($palette, success);
+}
+
+/* SECTIONS */
+.section-title {
+  margin: 5rem auto;
+}
+.section-description {
+  margin: 4rem auto;
+}
+.card {
+  box-shadow: 0 5px 16px 0 rgba(0, 0, 0, 0.1);
+  border: none;
+  padding: 40px 60px;
+}
+
+pre {
+  background: #fcfcfc;
+  padding: 1rem;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.08), 0px 0px 4px rgba(0, 0, 0, 0.05);
+
+  code {
+    font-family: "Space Mono", monospace !important;
+  }
+}
+
+.textarea-wrapper {
+  border-radius: 0px !important;
+}
+
+.animated {
+  animation-duration: 0.2s;
+  animation-fill-mode: both;
+}
+
+@keyframes slideInDown {
+  from {
+    transform: translate3d(0, -100%, 0);
+    visibility: visible;
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.slideInDown {
+  animation-name: slideInDown;
+}
+
+.noty_theme__mint.noty_bar .noty_body {
+  color: #fff !important;
+}
+
+@import "components/auth";
+@import "components/footer";
+@import "components/library";
+@import "components/single_library";
+@import "highlight";
+@import "components/tooltips";
+@import "~pretty-checkbox/src/pretty-checkbox.scss";
+@import "components/noty.scss";

@@ -1,0 +1,46 @@
+@import "../variables";
+
+.form-control {
+  border: 0;
+}
+.form-control:focus {
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  border: 0 !important;
+}
+.input-group-text {
+  padding: 1rem 1rem;
+}
+.custom-control-label::after {
+  background-color: map-get($palette, primary);
+}
+.hr-divider {
+  line-height: 0;
+  border-bottom: 1px solid #ddd;
+}
+.hr-divider-text {
+  background-color: map-get($gray, 100);
+  padding: 0 20px;
+  font-size: 12px;
+}
+.btn-github,
+.btn-github:disabled,
+.btn-facebook,
+.btn-facebook:disabled {
+  color: map-get($gray, 100) !important;
+}
+
+.btn-github,
+.btn-github:disabled {
+  background-color: map-get($palette, secondary) !important;
+}
+
+.btn-facebook {
+  background-color: #3b5998 !important;
+}
+.auth-card {
+  margin-bottom: 4rem;
+}
+.auth-extra {
+  padding: 6rem 0;
+}

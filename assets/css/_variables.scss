@@ -1,0 +1,31 @@
+@font-face {
+  font-family: "Norse";
+  font-weight: 500;
+  src: url("https://res.cloudinary.com/bahdcoder/raw/upload/v1530178979/Norsebold_m9ipg3.otf");
+}
+
+@import url("https://fonts.googleapis.com/css?family=Amatic+SC:700|Josefin+Sans");
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Mono');
+@import url('https://fonts.googleapis.com/css?family=Merriweather|Montserrat');
+
+$palette: (
+  primary: #ce973e,
+  secondary: #4a4a4a,
+  success: #6abfc3,
+  check: #96b874,
+  transparent-button: rgba(74, 74, 74, 0.3)
+);
+
+$text-colors: (
+  default: rgba(74, 74, 74, 0.7),
+  primary: map-get($palette, primary),
+  darker: rgb(85, 85, 85)
+);
+
+$gray: (
+  100: #fff,
+  200: #eee,
+  github: rgba(0, 0, 0, 0.5),
+  1000: #000,
+  1100: rgba(74,74,74,0.7)
+);
