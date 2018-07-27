@@ -31,13 +31,13 @@
                     <input required :type="hidePassword ? 'password' : 'text'" class="form-control" placeholder="Password" v-model="user.password">
                   </div>
                 </div>
-                <div class="d-block text-center my-4">
+                <div class="d-inline float-left my-4">
                   <p-check class="p-icon p-jelly" name="rememberMe" v-model="rememberMe">
                     <i slot="extra" class="fas fa-check icon"></i>
                     Remember Me
                   </p-check>
                 </div>
-                <!-- <nuxt-link to='/auth/password/new' class="my-4 float-right">Forgot Password ?</nuxt-link> -->
+                <nuxt-link to='/auth/password/new' class="my-4 float-right">Forgot Password ?</nuxt-link>
                 <button :disabled="loading" class="btn btn-primary hero-button form-control">
                   {{ loading ? 'Signing in ...': 'Signin' }}
                 </button>

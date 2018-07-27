@@ -81,7 +81,6 @@
 
 <script>
 import SubmissionComments from "@/components/SubmissionComments";
-import { ADD_SUBMISSION_COMMENT_BY_MENTOR } from "@/store/courses";
 
 export default {
   props: ["enrollment"],

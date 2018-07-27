@@ -22,8 +22,8 @@
             </h4>
             <div v-else class="comments-container px-5">
               <ul class="list-unstyled">
-                <li class="media my-3"  v-for="comment in submissionComments.comments" :key="comment.id">
-                  <img class="mr-3 rounded-circle" width="40" height="40" src="https://randomuser.me/api/portraits/men/43.jpg" alt="Generic placeholder image">
+                <li class="media my-3 comment"  v-for="comment in submissionComments.comments" :key="comment.id">
+                  <vue-gravatar :email="comment.user.email" />
                   <div class="media-body">
                     <h6 class="mt-0 mb-1 font-weight-bold">{{ comment.user.username }}</h6>
                     <p>

@@ -23,6 +23,11 @@
   font-weight: 500;
   font-size: 1.7rem;
   color: map-get($palette, primary) !important;
+
+  img{
+    width: 40px;
+    height: 40px;
+  }
 }
 
 body,
@@ -32,7 +37,21 @@ body,
   //   map-get($gray, 100),
   //   map-get($gray, 200)
   // );
-  // background-color: #fcfff7;
+  background-color: map-get($palette, bg) !important;
+}
+
+.user-avatar {
+  img {
+    display: inline-block;
+    width: 40px !important;
+    height: 40px !important;
+    border-radius: 50% !important;
+    margin-left: 1rem;
+  }
+
+  .nav-link {
+    display: inline;
+  }
 }
 
 .primary {
@@ -78,14 +97,16 @@ h6 {
 .header {
   height: 70vh;
   max-width: 100%;
-  background: linear-gradient(map-get($gray, 100), map-get($gray, 200));
-  background-color: #fcfff7;
-  clip-path: polygon(0 0, 100% 0, 100% 72%, 0 100%);
+  background: linear-gradient(map-get($palette, bg), #fbeeea);
+  background-color: #fefbfa;
+  clip-path: polygon(0 0, 100% 0, 100% 31%, 0 125%)
 }
 .how-it-works {
-  background: linear-gradient(map-get($gray, 100), map-get($gray, 200));
+  background: map-get($palette, bg);
 }
-
+.dashboard-content {
+  min-height: 18rem;
+}
 .hero-header {
   color: map-get($palette, primary);
   font-size: 2.25rem;
@@ -130,7 +151,8 @@ button:disabled {
   color: map-get($palette, transparent-button) !important;
   box-shadow: none;
 }
-.btn-secondary, .btn-secondary:disabled {
+.btn-secondary,
+.btn-secondary:disabled {
   background-color: map-get($palette, primary);
   padding: 1rem 1.5rem;
   height: 3rem;

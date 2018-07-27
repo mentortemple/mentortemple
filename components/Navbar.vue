@@ -1,7 +1,10 @@
 <template>
   <nav class="navbar py-4 mb-3 navbar-expand-lg navbar-light navbar-custom">
       <div class="container">
-        <nuxt-link class="navbar-brand" to='/'>MENTOR-TEMPLE</nuxt-link>
+        <nuxt-link class="navbar-brand" to='/'>
+          <img src="http://res.cloudinary.com/bahdcoder/image/upload/v1532605976/teaching_ke0wri.svg" alt="MENTOR-TEMPLE">
+          MENTOR-TEMPLE
+        </nuxt-link>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
         </button>
@@ -22,7 +25,8 @@
               <li class="nav-item" v-if="!isLoggedIn">
                   <nuxt-link class="nav-link" to='/auth/signup'>Sign up</nuxt-link>
               </li>
-              <li class="nav-item" v-if="isLoggedIn">
+              <li class="nav-item user-avatar" v-if="isLoggedIn">
+                  <vue-gravatar :email="authUserData.user.email" />
                   <a style="cursor: pointer;" @click="logOut()" class="nav-link">Logout</a>
               </li>
             </ul>

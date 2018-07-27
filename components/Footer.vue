@@ -3,7 +3,10 @@
       <div class="container-fluid text-center">
         <div class="row">
             <div class="col-md-4 footer-brand">
-              <a href="">MENTOR-TEMPLE</a>
+              <nuxt-link to="/">
+                <img src="http://res.cloudinary.com/bahdcoder/image/upload/v1532605976/teaching_ke0wri.svg" alt="MENTOR-TEMPLE">
+                MENTOR-TEMPLE
+              </nuxt-link>
             </div>
             <div class="col-md-4 footer-social">
               <a class="px-4" href=""><img src="https://www.theodinproject.com/assets/icons/icon-gitter-efa0e700b2b7721a7d7d6386565d3aa6b48885a4986dd47bf2a519f320572294.svg" alt=""></a>

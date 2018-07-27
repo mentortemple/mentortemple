@@ -47,7 +47,8 @@ module.exports = {
     {
       src: "~plugins/vue-noty.js",
       ssr: false
-    }
+    },
+    "~plugins/vue-gravatar.js"
   ],
 
   /*

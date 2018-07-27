@@ -47,6 +47,15 @@
   }
 }
 
+.comment {
+  img {
+    margin-right: 1rem !important;
+    border-radius: 50% !important;
+    width: 40px !important;
+    height: 40px !important;
+  }
+}
+
 .lesson-list-item {
   &-section-title {
     font-size: 1.7rem !important;
