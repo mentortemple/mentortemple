@@ -1,7 +1,7 @@
 {
   "name": "mentor-temple",
   "version": "1.0.0",
-  "description": "A platform for mentoring world class developers",
+  "description": "Become an expert in your industry. Get mentored by experts.",
   "author": "Kati Frantz",
   "private": true,
   "scripts": {
@@ -10,7 +10,8 @@
     "start": "nuxt start",
     "generate": "nuxt generate",
     "lint": "eslint --ext .js,.vue --ignore-path .gitignore .",
-    "precommit": "npm run lint"
+    "precommit": "npm run lint",
+    "heroku-postbuild": "yarn build"
   },
   "dependencies": {
     "@nuxtjs/axios": "^5.0.0",
