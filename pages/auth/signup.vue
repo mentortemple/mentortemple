@@ -18,7 +18,7 @@
                         <i class="fas fa-user"></i>
                       </span>
                     </div>
-                    <input required type="text" class="form-control" v-model="user.username" placeholder="Username" aria-label="Username" aria-describedby="username">
+                    <input required type="text" class="form-control auth-control" v-model="user.username" placeholder="Username" aria-label="Username" aria-describedby="username">
                   </div>
                 </div>
                 <div class="form-group">
@@ -28,7 +28,7 @@
                         <i class="fas fa-envelope"></i>
                       </span>
                     </div>
-                    <input required type="email" v-model="user.email" class="form-control" placeholder="Email Address" aria-label="Email Address" aria-describedby="email">
+                    <input required type="email" v-model="user.email" class="form-control auth-control" placeholder="Email Address" aria-label="Email Address" aria-describedby="email">
                   </div>
                 </div>
                 <div class="form-group">
@@ -38,10 +38,10 @@
                         <i :class="hidePassword ? 'fas fa-eye-slash': 'fas fa-eye'"></i>
                       </span>
                     </div>
-                    <input required :type="hidePassword ? 'password' : 'text'" class="form-control" v-model="user.password" placeholder="Password" aria-label="Password" aria-describedby="password">
+                    <input required :type="hidePassword ? 'password' : 'text'" class="form-control auth-control" v-model="user.password" placeholder="Password" aria-label="Password" aria-describedby="password">
                   </div>
                 </div>
-                <button :disabled="loading" class="btn btn-primary hero-button form-control">
+                <button :disabled="loading" class="btn auth-button btn-primary hero-button form-control">
                   {{ loading ? 'Signing you up ...': 'Sign up' }}
                 </button>
                 <div class="hr-divider text-center my-5">

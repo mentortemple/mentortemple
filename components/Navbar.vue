@@ -2,7 +2,7 @@
   <nav class="navbar py-4 mb-3 navbar-expand-lg navbar-light navbar-custom">
       <div class="container">
         <nuxt-link class="navbar-brand" to='/'>
-          <img src="http://res.cloudinary.com/bahdcoder/image/upload/v1532605976/teaching_ke0wri.svg" alt="MENTOR-TEMPLE">
+          <img src="https://res.cloudinary.com/bahdcoder/image/upload/v1532605976/teaching_ke0wri.svg" alt="MENTOR-TEMPLE">
           MENTOR-TEMPLE
         </nuxt-link>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">

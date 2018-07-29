@@ -18,7 +18,7 @@
                         <i class="fas fa-envelope"></i>
                       </span>
                     </div>
-                    <input required v-model="user.identifier" type="text" class="form-control" placeholder="Email Address" aria-label="Email Address" aria-describedby="email">
+                    <input required v-model="user.identifier" type="text" class="form-control auth-control" placeholder="Email Address" aria-label="Email Address" aria-describedby="email">
                   </div>
                 </div>
                 <div class="form-group">
@@ -28,7 +28,7 @@
                         <i :class="hidePassword ? 'fas fa-eye-slash': 'fas fa-eye'"></i>
                       </span>
                     </div>
-                    <input required :type="hidePassword ? 'password' : 'text'" class="form-control" placeholder="Password" v-model="user.password">
+                    <input required :type="hidePassword ? 'password' : 'text'" class="form-control auth-control" placeholder="Password" v-model="user.password">
                   </div>
                 </div>
                 <div class="d-inline float-left my-4">
@@ -38,7 +38,7 @@
                   </p-check>
                 </div>
                 <nuxt-link to='/auth/password/new' class="my-4 float-right">Forgot Password ?</nuxt-link>
-                <button :disabled="loading" class="btn btn-primary hero-button form-control">
+                <button :disabled="loading" class="btn auth-button btn-primary hero-button form-control">
                   {{ loading ? 'Signing in ...': 'Signin' }}
                 </button>
                 <div class="hr-divider text-center my-5">

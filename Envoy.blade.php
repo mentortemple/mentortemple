@@ -1,4 +1,4 @@
-@servers(['apis' => ['root@174.138.15.49']])
+@servers(['apis' => ['root@207.154.225.174']])
 
 @php
 $repo = "git@mentortemple.github.com:mentortemple/mentortemple.git";
