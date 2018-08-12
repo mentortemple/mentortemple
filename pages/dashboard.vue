@@ -52,8 +52,8 @@ import DashboardMentorshipCard from "@/components/DashboardMentorshipCard";
 
 export default {
   middleware: "authenticated",
-  mounted() {
-    this.$store.dispatch(`courses/${GET_ENROLLED_AND_MENTORED_COURSES}`);
+  async fetch({ store }) {
+    await store.dispatch(`courses/${GET_ENROLLED_AND_MENTORED_COURSES}`);
   },
   computed: {
     ...mapState(["courses"])

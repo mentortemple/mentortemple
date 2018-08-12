@@ -25,8 +25,8 @@ export default {
     "course-card": CourseCard,
     "single-tag": SelectTag
   },
-  mounted() {
-    this.$store.dispatch(`courses/${GET_COURSES}`);
+  async fetch({ store }) {
+    await store.dispatch(`courses/${GET_COURSES}`);
   },
   computed: {
     ...mapState(["courses"])

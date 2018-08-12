@@ -40,9 +40,9 @@ import { GET_COURSE } from "@/store/courses";
 import { CREATE_ENROLLMENT } from "@/store/enrollments";
 
 export default {
-  mounted() {
-    this.$store.dispatch(`courses/${GET_COURSE}`, {
-      slug: this.$route.params.slug
+  async fetch({ store, params }) {
+    await store.dispatch(`courses/${GET_COURSE}`, {
+      slug: params.slug
     });
   },
   data() {

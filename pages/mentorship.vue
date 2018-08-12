@@ -24,8 +24,8 @@ export default {
   components: {
     MentorshipCourseCard
   },
-  mounted() {
-    this.$store.dispatch(`courses/${GET_COURSES}`);
+  async fetch({ store }) {
+    await store.dispatch(`courses/${GET_COURSES}`);
   },
   computed: {
     ...mapState(["courses"])
