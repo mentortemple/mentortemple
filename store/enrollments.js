@@ -24,6 +24,7 @@ export const actions = {
         return reject(error);
       }
     });
+    s;
   }
 };
 

@@ -295,6 +295,8 @@ export const actions = {
 
       commit(ADD_ENROLLED_COURSES, data.enrollments);
       commit(ADD_MENTORED_COURSES, data.mentorshipEnrollments);
+
+      return resolve(data);
     });
   },
   async [ADD_SUBMISSION_COMMENT](
