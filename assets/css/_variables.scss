@@ -5,8 +5,8 @@
 }
 
 @import url("https://fonts.googleapis.com/css?family=Amatic+SC:700|Josefin+Sans");
-@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Mono');
-@import url('https://fonts.googleapis.com/css?family=Merriweather|Montserrat');
+@import url("https://fonts.googleapis.com/css?family=IBM+Plex+Mono");
+@import url("https://fonts.googleapis.com/css?family=Merriweather|Montserrat");
 
 $palette: (
   primary: #ce973e,
@@ -28,5 +28,6 @@ $gray: (
   200: #eee,
   github: rgba(0, 0, 0, 0.5),
   1000: #000,
-  1100: rgba(74,74,74,0.7)
+  1100: rgba(74, 74, 74, 0.7),
+  form-control: rgba(0, 0, 0, 0.1)
 );

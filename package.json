@@ -14,7 +14,7 @@
     "heroku-postbuild": "yarn build"
   },
   "dependencies": {
-    "@nuxtjs/axios": "^5.0.0",
+    "@nuxtjs/axios": "^5.3.1",
     "@nuxtjs/markdownit": "^1.2.1",
     "@types/dotenv": "^4.0.3",
     "body-parser": "^1.18.3",

@@ -21,7 +21,6 @@ export const actions = {
 
         return resolve(enrollment);
       } catch (error) {
-        console.log(error, error.response);
         return reject(error);
       }
     });

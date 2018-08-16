@@ -44,6 +44,7 @@ module.exports = {
     "~plugins/bootstrap.js",
     "~plugins/global-components.js",
     "~plugins/vue-disqus.js",
+    "~/plugins/axios",
     {
       src: "~plugins/vue-noty.js",
       ssr: false

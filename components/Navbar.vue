@@ -19,6 +19,9 @@
               <li class="nav-item">
                   <nuxt-link class="nav-link" to='/library'>Library</nuxt-link>
               </li>
+              <li class="nav-item">
+                  <nuxt-link class="nav-link" to='/discussions'>Discussions</nuxt-link>
+              </li>
               <li class="nav-item" v-if="!isLoggedIn">
                   <nuxt-link class="nav-link" to='/auth/signin'>Sign in</nuxt-link>
               </li>

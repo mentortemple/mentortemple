@@ -53,6 +53,39 @@ body,
   }
 }
 
+.discussion {
+  img {
+    display: inline-block;
+    width: 60px !important;
+    height: 60px !important;
+    border-radius: 50% !important;
+    margin-left: 1rem;
+  }
+}
+
+.comment {
+  border: 1px solid map-get($gray, form-control) !important;
+  width: 100%;
+  img {
+    display: inline-block;
+    width: 30px !important;
+    height: 30px !important;
+    border-radius: 50% !important;
+    margin-left: 1rem;
+  }
+} 
+
+.preview-box {
+  background-color: rgb(247, 247, 247);
+}
+
+.comment-box {
+  textarea {
+    resize: none;
+    overflow-y: scroll;
+  }
+}
+
 html {
   position: relative;
   min-height: 100%;
@@ -167,6 +200,14 @@ button:disabled {
   padding: 1rem 1.5rem;
   height: 3rem;
   line-height: 1.3rem;
+}
+
+.btn-shorter {
+  line-height: 0.2rem !important;
+  font-size: 0.8rem;
+  padding: 1rem 0.7rem;
+  font-weight: bolder;
+  height: 1rem !important;
 }
 
 .btn-secondary:hover {

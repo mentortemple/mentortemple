@@ -88,7 +88,6 @@ export default {
       );
     },
     enrollIntoCourse() {
-      console.log(this.course);
       if (this.$store.state.isAuthenticated) {
         this.$store
           .dispatch(`enrollments/${CREATE_ENROLLMENT}`, this.course)
